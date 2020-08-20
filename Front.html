@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MyEngine.jsp</title>
+<style type="text/css">                     
+	#Pan{
+		position: absolute;
+		left: 200px;
+		top: 100px;
+		width: 1500px;
+		height: 650px;
+		background: pink;
+	}
+	#In{
+		position: absolute;
+		left: 760px;
+		top: 765px;
+		width: 270px;
+		height: 30px;
+	}
+	#Go{
+		position: absolute;
+		left: 1050px;
+		top: 765px;
+		width: 50px;
+		height:35px;
+	}
+</style>
+<script type="text/javascript">
+   
+	function run(){
+        var Q= document.getElementById("In").value;        //함수 안으로 들어와야 한다.
+		if(Q=="자바" || Q=="Java"){
+            document.write("<img src='C:/Users/obybk/Desktop/java.jpg'/>");
+        }
+	}
+</script>
+</head>
+<body>
+	<div id="Pan">Good</div>
+	<input type="text" name="" id="In" />
+	<input type="button" value="Go" id="Go" onclick="run()" />
+</body>
+</html>
